@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Properties>
-        <Property name="APP_ID" value="backend.ota-service"/>
+        <Property name="APP_ID" value="user-center"/>
         <Property name="LOG_PATH" value="/data/logs/${APP_ID}"/>
         <Property name="LOG_PATTERN"
                   value="%d{yyyy-MM-dd HH:mm:ss.SSS} %p %c [%t]: ${APP_ID} [%X{traceId}] %msg %ex{separator(|)}%n"/>
