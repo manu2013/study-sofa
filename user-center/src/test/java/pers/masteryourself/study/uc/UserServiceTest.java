@@ -21,8 +21,6 @@ import pers.masteryourself.study.uc.user.UserService;
 @SpringBootTest(classes = Application.class)
 public class UserServiceTest {
 
-    static ApmMetrics apmMetrics = new ApmMetrics();
-
     @Autowired
     private UserService userService;
 

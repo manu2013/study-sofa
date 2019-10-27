@@ -19,8 +19,10 @@ public class ApmLoggerFactory {
 
     static {
         //SpaceId init properties
-        Map spaceIdProperties = new HashMap<String, String>();
-        MultiAppLoggerSpaceManager.init(RPC_LOG_SPACE, spaceIdProperties);
+        if (!MultiAppLoggerSpaceManager.isSpaceInitialized(RPC_LOG_SPACE)) {
+            Map spaceIdProperties = new HashMap<String, String>();
+            MultiAppLoggerSpaceManager.init(RPC_LOG_SPACE, spaceIdProperties);
+        }
     }
 
     public static org.slf4j.Logger getLogger(Class<?> clazz) {
