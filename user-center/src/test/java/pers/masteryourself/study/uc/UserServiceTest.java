@@ -30,9 +30,9 @@ public class UserServiceTest {
         try {
             userService.printUserInfo();
         } catch (Exception e) {
-            metrics.error(metrics, e);
+            metrics.error(e);
         } finally {
-            metrics.end(metrics);
+            metrics.end();
         }
     }
 

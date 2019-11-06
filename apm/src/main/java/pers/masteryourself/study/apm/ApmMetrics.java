@@ -26,21 +26,22 @@ public class ApmMetrics {
 
     private Long endTime;
 
-    public void error(ApmMetrics metrics, Throwable e) {
-        metrics.setErrorMsg(e.getMessage());
+    public void error(Throwable e) {
+        this.setErrorMsg(e.getMessage());
     }
 
-    public void end(ApmMetrics metrics) {
-        metrics.setEndTime(System.currentTimeMillis());
-        this.submitResult(metrics);
+    public void end() {
+        this.setEndTime(System.currentTimeMillis());
+        this.submitResult();
     }
 
-    private void submitResult(ApmMetrics metrics) {
-        if (StringUtil.isEmpty(metrics.getErrorMsg())) {
-            LOGGER.info("{} 执行正常，耗时 {}", metrics.getMethodName(), metrics.getEndTime() - metrics.getBeginTime());
+    private void submitResult() {
+        long spendTime = this.getEndTime() - this.getBeginTime();
+        if (StringUtil.isEmpty(this.getErrorMsg())) {
+            LOGGER.info("{} 执行正常，耗时 {}", this.getMethodName(), spendTime);
         } else {
-            LOGGER.error("{} 执行失败，耗时 {} ms，异常信息 {}", metrics.getMethodName(), metrics.getEndTime() - metrics.getBeginTime(),
-                    metrics.getErrorMsg());
+            LOGGER.error("{} 执行失败，耗时 {} ms，异常信息 {}", this.getMethodName(), spendTime,
+                    this.getErrorMsg());
         }
     }
 
