@@ -1,4 +1,4 @@
-package pers.masteryourself.study.apm.log;
+package pers.masteryourself.study.sofa.log.apm.log;
 
 import com.alipay.sofa.common.log.MultiAppLoggerSpaceManager;
 
@@ -10,18 +10,18 @@ import java.util.Map;
  * @version : 1.0
  * blog : https://blog.csdn.net/masteryourself
  * Tel : 17621208646
- * Description : 描述
+ * Description : ApmLoggerFactory
+ * 中间件的日志 API
  * @date : 2019/10/26 21:46
  */
 public class ApmLoggerFactory {
 
-    private static final String RPC_LOG_SPACE = "pers.masteryourself.study.apm";
+    private static final String APM_LOG_SPACE = "pers.masteryourself.study.sofa.apm";
 
     static {
-        //SpaceId init properties
-        if (!MultiAppLoggerSpaceManager.isSpaceInitialized(RPC_LOG_SPACE)) {
+        if (!MultiAppLoggerSpaceManager.isSpaceInitialized(APM_LOG_SPACE)) {
             Map spaceIdProperties = new HashMap<String, String>();
-            MultiAppLoggerSpaceManager.init(RPC_LOG_SPACE, spaceIdProperties);
+            MultiAppLoggerSpaceManager.init(APM_LOG_SPACE, spaceIdProperties);
         }
     }
 
@@ -33,8 +33,8 @@ public class ApmLoggerFactory {
     }
 
     public static org.slf4j.Logger getLogger(String name) {
-        //From "pers/masteryourself/study/apm/log" get the xml configuration and init,then get the logger object
-        return MultiAppLoggerSpaceManager.getLoggerBySpace(name, RPC_LOG_SPACE);
+        //From "pers/masteryourself/study/apm/log" get the xml  and init,then get the logger object
+        return MultiAppLoggerSpaceManager.getLoggerBySpace(name, APM_LOG_SPACE);
     }
 
 }

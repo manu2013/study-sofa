@@ -5,8 +5,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import pers.masteryourself.study.apm.Apm;
-import pers.masteryourself.study.apm.ApmMetrics;
+import pers.masteryourself.study.sofa.log.apm.Apm;
+import pers.masteryourself.study.sofa.log.apm.ApmMetrics;
 import pers.masteryourself.study.uc.user.UserService;
 
 /**

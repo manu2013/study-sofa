@@ -1,16 +1,16 @@
-package pers.masteryourself.study.apm;
+package pers.masteryourself.study.sofa.log.apm;
 
 import com.alipay.sofa.common.utils.StringUtil;
 import lombok.Data;
 import org.slf4j.Logger;
-import pers.masteryourself.study.apm.log.ApmLoggerFactory;
+import pers.masteryourself.study.sofa.log.apm.log.ApmLoggerFactory;
 
 /**
  * @author : masteryourself
  * @version : 1.0
  * blog : https://blog.csdn.net/masteryourself
  * Tel : 17621208646
- * Description : 描述
+ * Description : 模拟调用链埋点
  * @date : 2019/10/26 21:52
  */
 @Data
@@ -40,8 +40,7 @@ public class ApmMetrics {
         if (StringUtil.isEmpty(this.getErrorMsg())) {
             LOGGER.info("{} 执行正常，耗时 {}", this.getMethodName(), spendTime);
         } else {
-            LOGGER.error("{} 执行失败，耗时 {} ms，异常信息 {}", this.getMethodName(), spendTime,
-                    this.getErrorMsg());
+            LOGGER.error("{} 执行失败，耗时 {} ms，异常信息 {}", this.getMethodName(), spendTime, this.getErrorMsg());
         }
     }
 
