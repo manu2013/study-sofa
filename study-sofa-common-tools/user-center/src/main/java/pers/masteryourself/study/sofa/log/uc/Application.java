@@ -1,4 +1,4 @@
-package pers.masteryourself.study.uc;
+package pers.masteryourself.study.sofa.log.uc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

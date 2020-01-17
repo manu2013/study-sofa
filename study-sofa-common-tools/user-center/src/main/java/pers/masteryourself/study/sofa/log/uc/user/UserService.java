@@ -1,4 +1,4 @@
-package pers.masteryourself.study.uc.user;
+package pers.masteryourself.study.sofa.log.uc.user;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

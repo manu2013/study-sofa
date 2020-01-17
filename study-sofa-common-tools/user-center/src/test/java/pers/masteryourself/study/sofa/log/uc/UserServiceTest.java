@@ -1,4 +1,4 @@
-package pers.masteryourself.study.uc;
+package pers.masteryourself.study.sofa.log.uc;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import pers.masteryourself.study.sofa.log.apm.Apm;
 import pers.masteryourself.study.sofa.log.apm.ApmMetrics;
-import pers.masteryourself.study.uc.user.UserService;
+import pers.masteryourself.study.sofa.log.uc.user.UserService;
 
 /**
  * @author : rrz
