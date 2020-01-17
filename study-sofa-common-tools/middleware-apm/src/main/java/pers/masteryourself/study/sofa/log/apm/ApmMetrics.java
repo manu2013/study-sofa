@@ -40,7 +40,8 @@ public class ApmMetrics {
         if (StringUtil.isEmpty(this.getErrorMsg())) {
             LOGGER.info("{} 执行正常，耗时 {}", this.getMethodName(), spendTime);
         } else {
-            LOGGER.error("{} 执行失败，耗时 {} ms，异常信息 {}", this.getMethodName(), spendTime, this.getErrorMsg());
+            LOGGER.error("{} 执行失败，耗时 {} ms，异常信息 {}", this.getMethodName(),
+                    spendTime, this.getErrorMsg());
         }
     }
 
