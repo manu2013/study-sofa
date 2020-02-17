@@ -38,7 +38,7 @@ public class ApmMetrics {
     private void submitResult() {
         long spendTime = this.getEndTime() - this.getBeginTime();
         if (StringUtil.isEmpty(this.getErrorMsg())) {
-            LOGGER.info("{} 执行正常，耗时 {}", this.getMethodName(), spendTime);
+            LOGGER.info("{} 执行正常，耗时 {} ms", this.getMethodName(), spendTime);
         } else {
             LOGGER.error("{} 执行失败，耗时 {} ms，异常信息 {}", this.getMethodName(),
                     spendTime, this.getErrorMsg());
