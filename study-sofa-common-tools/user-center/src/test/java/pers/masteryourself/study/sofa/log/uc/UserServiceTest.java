@@ -25,7 +25,7 @@ public class UserServiceTest {
     private UserService userService;
 
     @Test
-    public void printUserInfo() {
+    public void testPrintUserInfo() {
         ApmMetrics metrics = Apm.begin("printUserInfo");
         try {
             userService.printUserInfo();
