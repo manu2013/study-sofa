@@ -10,16 +10,17 @@ import pers.masteryourself.study.sofa.log.apm.ApmMetrics;
 import pers.masteryourself.study.sofa.log.uc.user.UserService;
 
 /**
- * @author : rrz
- * @version : 1.0
- * QQ : 1571902315
- * Tel : 17621208646
- * Description : 描述
- * @date : 2019/10/26 22:39
+ * <p>description : UserCenterApplicationTest
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
+ * @author : masteryourself
+ * @version : 1.0.0
+ * @date : 2019/10/26 21:46
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = Application.class)
-public class UserServiceTest {
+@SpringBootTest(classes = UserCenterApplication.class)
+public class UserCenterApplicationTest {
 
     @Autowired
     private UserService userService;

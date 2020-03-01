@@ -7,7 +7,7 @@
     <groupId>pers.masteryourelf.study</groupId>
     <artifactId>study-sofa</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <modules>
         <module>study-sofa-common-tools</module>
     </modules>

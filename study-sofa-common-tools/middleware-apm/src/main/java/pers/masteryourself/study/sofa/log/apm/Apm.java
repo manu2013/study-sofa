@@ -1,12 +1,13 @@
 package pers.masteryourself.study.sofa.log.apm;
 
 /**
+ * <p>description : Apm, APM 工具类
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : APM 工具类
- * @date : 2019/10/26 21:44
+ * @version : 1.0.0
+ * @date : 2019/10/26 21:46
  */
 public class Apm {
 

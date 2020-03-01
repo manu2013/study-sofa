@@ -6,12 +6,13 @@ import org.slf4j.Logger;
 import pers.masteryourself.study.sofa.log.apm.log.ApmLoggerFactory;
 
 /**
+ * <p>description : ApmMetrics, 模拟调用链埋点
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 模拟调用链埋点
- * @date : 2019/10/26 21:52
+ * @version : 1.0.0
+ * @date : 2019/10/26 21:46
  */
 @Data
 public class ApmMetrics {

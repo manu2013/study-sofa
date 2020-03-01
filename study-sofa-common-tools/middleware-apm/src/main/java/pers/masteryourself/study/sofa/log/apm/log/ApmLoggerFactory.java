@@ -6,12 +6,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * <p>description : ApmLoggerFactory, 中间件的日志 API
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : ApmLoggerFactory
- * 中间件的日志 API
+ * @version : 1.0.0
  * @date : 2019/10/26 21:46
  */
 public class ApmLoggerFactory {

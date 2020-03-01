@@ -8,12 +8,13 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * <p>description : UserService
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 描述
- * @date : 2019/10/26 22:32
+ * @version : 1.0.0
+ * @date : 2019/10/26 21:46
  */
 @Service
 public class UserService {
